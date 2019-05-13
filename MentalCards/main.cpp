@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     
-    /*
+    
     mpz_class bitsNumber1 = factory::getRandomBits(512);
     
     std::cout << bitsNumber1 << std::endl;
@@ -28,7 +28,6 @@ int main(int argc, const char * argv[]) {
     mpz_class randomPrime = factory::getRandomPrime(512);
     
     std::cout << randomPrime << std::endl;
-    */
     
     BBS * newBBS = new BBS();
     
@@ -50,6 +49,12 @@ int main(int argc, const char * argv[]) {
     mpz_class remainder = factory::fun(74, 509, 1019);
     
     std::cout << remainder << std::endl;
+    
+    mpz_class invmod = factory::ex_Eulid(2617, randomPrime);
+    
+    std::cout << invmod << std::endl;
+    
+    std::cout << 2617 * invmod % randomPrime << std::endl;
     
     return 0;
 }

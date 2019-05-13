@@ -24,6 +24,7 @@ mpz_class factory::getRandomPrime(int bits){
     return ret;
 }
 
+//expontial modulo
 mpz_class factory::fun(const mpz_class exponent, const mpz_class base, const mpz_class n){
     //mpz_class ret;
     mpz_class e, b ,temp = 1, remainder = 0;
@@ -46,7 +47,38 @@ mpz_class factory::fun(const mpz_class exponent, const mpz_class base, const mpz
     return remainder;
 }
 
-//inverse module
+//inverse modulo
+mpz_class factory::ex_Eulid(const mpz_class x, const mpz_class n){
+    mpz_class invmod = 0;
+    mpz_class r, d , t1, t2;
+    mpz_class a1 = 1, a2 = 0, a3 = n; // GF(n)
+    mpz_class b1 = 0, b2 = 1, b3 = x;
+    
+    while (1) {
+        if (b3 == 0) {
+            std::cout << "error" << std::endl;
+        }
+        if (b3 == 1) {
+            break;
+        }
+        // modulo and residue
+        d = a3 / b3;
+        r = a3 - d * b3;
+        
+        t1 = a1 - d * b1;
+        t2 = a2 - d * b2;
+        
+        a3 = b3;
+        b3 = r;
+        
+        a1 = b1;
+        b1 = t1;
+        a2 = b2;
+        b2 = t2;
+    }
+    invmod = (b2 + n) % n;
+    return invmod;
+}
 
 
 

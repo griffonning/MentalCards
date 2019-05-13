@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <gmpxx.h>
+#include <iostream>
 #include <cmath>
 
 namespace factory {
