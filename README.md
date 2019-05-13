@@ -1,2 +1,2 @@
 # MentalCards
-A small demo
+A small demo of mental cards
