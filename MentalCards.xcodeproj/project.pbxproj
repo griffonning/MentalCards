@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D32B9992200BFC900B46CAB /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D32B9932200BFC800B46CAB /* libgmp.a */; };
+		8D32B99A2200BFC900B46CAB /* libgmpxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D32B9942200BFC800B46CAB /* libgmpxx.a */; };
+		8D32B99B2200BFC900B46CAB /* libgmpxx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D32B9952200BFC800B46CAB /* libgmpxx.dylib */; };
+		8D32B99C2200BFC900B46CAB /* libgmp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D32B9962200BFC800B46CAB /* libgmp.dylib */; };
+		8D32B99D2200BFC900B46CAB /* libgmpxx.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D32B9972200BFC800B46CAB /* libgmpxx.4.dylib */; };
+		8D32B99E2200BFC900B46CAB /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D32B9982200BFC900B46CAB /* libgmp.10.dylib */; };
+		8D32B9A42201E69100B46CAB /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D32B9A22201E69100B46CAB /* Factory.cpp */; };
+		8DD7205B2267A9A300DCAFFE /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7205A2267A9A300DCAFFE /* server.cpp */; };
+		8DD7205D2267A9B500DCAFFE /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7205C2267A9B500DCAFFE /* client.cpp */; };
+		8DD720602271F78A00DCAFFE /* bbs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7205F2271F78A00DCAFFE /* bbs.cpp */; };
+		8DD7206822833A5500DCAFFE /* tc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7206622833A5500DCAFFE /* tc.cpp */; };
 		8DF5EC0821F93D2E00A9773E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5EC0721F93D2E00A9773E /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +34,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8D32B9932200BFC800B46CAB /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = ../../../../usr/local/Cellar/gmp/6.1.2_2/lib/libgmp.a; sourceTree = "<group>"; };
+		8D32B9942200BFC800B46CAB /* libgmpxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmpxx.a; path = ../../../../usr/local/Cellar/gmp/6.1.2_2/lib/libgmpxx.a; sourceTree = "<group>"; };
+		8D32B9952200BFC800B46CAB /* libgmpxx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmpxx.dylib; path = ../../../../usr/local/Cellar/gmp/6.1.2_2/lib/libgmpxx.dylib; sourceTree = "<group>"; };
+		8D32B9962200BFC800B46CAB /* libgmp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.dylib; path = ../../../../usr/local/Cellar/gmp/6.1.2_2/lib/libgmp.dylib; sourceTree = "<group>"; };
+		8D32B9972200BFC800B46CAB /* libgmpxx.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmpxx.4.dylib; path = ../../../../usr/local/Cellar/gmp/6.1.2_2/lib/libgmpxx.4.dylib; sourceTree = "<group>"; };
+		8D32B9982200BFC900B46CAB /* libgmp.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.10.dylib; path = ../../../../usr/local/Cellar/gmp/6.1.2_2/lib/libgmp.10.dylib; sourceTree = "<group>"; };
+		8D32B9A22201E69100B46CAB /* Factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Factory.cpp; sourceTree = "<group>"; };
+		8D32B9A32201E69100B46CAB /* Factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Factory.hpp; sourceTree = "<group>"; };
+		8DD7205A2267A9A300DCAFFE /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
+		8DD7205C2267A9B500DCAFFE /* client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = client.cpp; sourceTree = "<group>"; };
+		8DD7205E2271F68100DCAFFE /* bbs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bbs.hpp; sourceTree = "<group>"; };
+		8DD7205F2271F78A00DCAFFE /* bbs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bbs.cpp; sourceTree = "<group>"; };
+		8DD7206622833A5500DCAFFE /* tc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tc.cpp; sourceTree = "<group>"; };
+		8DD7206722833A5500DCAFFE /* tc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tc.hpp; sourceTree = "<group>"; };
 		8DF5EC0421F93D2E00A9773E /* MentalCards */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MentalCards; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF5EC0721F93D2E00A9773E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D32B9992200BFC900B46CAB /* libgmp.a in Frameworks */,
+				8D32B99A2200BFC900B46CAB /* libgmpxx.a in Frameworks */,
+				8D32B99B2200BFC900B46CAB /* libgmpxx.dylib in Frameworks */,
+				8D32B99C2200BFC900B46CAB /* libgmp.dylib in Frameworks */,
+				8D32B99D2200BFC900B46CAB /* libgmpxx.4.dylib in Frameworks */,
+				8D32B99E2200BFC900B46CAB /* libgmp.10.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D32B9922200BFC800B46CAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D32B9982200BFC900B46CAB /* libgmp.10.dylib */,
+				8D32B9932200BFC800B46CAB /* libgmp.a */,
+				8D32B9962200BFC800B46CAB /* libgmp.dylib */,
+				8D32B9972200BFC800B46CAB /* libgmpxx.4.dylib */,
+				8D32B9942200BFC800B46CAB /* libgmpxx.a */,
+				8D32B9952200BFC800B46CAB /* libgmpxx.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8DF5EBFB21F93D2E00A9773E = {
 			isa = PBXGroup;
 			children = (
 				8DF5EC0621F93D2E00A9773E /* MentalCards */,
 				8DF5EC0521F93D2E00A9773E /* Products */,
+				8D32B9922200BFC800B46CAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +102,15 @@
 		8DF5EC0621F93D2E00A9773E /* MentalCards */ = {
 			isa = PBXGroup;
 			children = (
+				8DD7205E2271F68100DCAFFE /* bbs.hpp */,
+				8DD7205F2271F78A00DCAFFE /* bbs.cpp */,
+				8DD7206622833A5500DCAFFE /* tc.cpp */,
+				8DD7206722833A5500DCAFFE /* tc.hpp */,
 				8DF5EC0721F93D2E00A9773E /* main.cpp */,
+				8D32B9A22201E69100B46CAB /* Factory.cpp */,
+				8D32B9A32201E69100B46CAB /* Factory.hpp */,
+				8DD7205A2267A9A300DCAFFE /* server.cpp */,
+				8DD7205C2267A9B500DCAFFE /* client.cpp */,
 			);
 			path = MentalCards;
 			sourceTree = "<group>";
@@ -118,6 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD7206822833A5500DCAFFE /* tc.cpp in Sources */,
+				8DD7205B2267A9A300DCAFFE /* server.cpp in Sources */,
+				8D32B9A42201E69100B46CAB /* Factory.cpp in Sources */,
+				8DD720602271F78A00DCAFFE /* bbs.cpp in Sources */,
+				8DD7205D2267A9B500DCAFFE /* client.cpp in Sources */,
 				8DF5EC0821F93D2E00A9773E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +298,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/gmp/6.1.2_2/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/gmp/6.1.2_2/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/usr/local/Cellar/gmp/6.1.2_2/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +312,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/gmp/6.1.2_2/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/gmp/6.1.2_2/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/usr/local/Cellar/gmp/6.1.2_2/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
