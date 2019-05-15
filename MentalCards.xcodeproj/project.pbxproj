@@ -14,6 +14,8 @@
 		8D32B99D2200BFC900B46CAB /* libgmpxx.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D32B9972200BFC800B46CAB /* libgmpxx.4.dylib */; };
 		8D32B99E2200BFC900B46CAB /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D32B9982200BFC900B46CAB /* libgmp.10.dylib */; };
 		8D32B9A42201E69100B46CAB /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D32B9A22201E69100B46CAB /* Factory.cpp */; };
+		8DB9E715228C084A00D6E22B /* prover2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9E713228C084A00D6E22B /* prover2.cpp */; };
+		8DB9E718228C086700D6E22B /* verifier2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9E716228C086700D6E22B /* verifier2.cpp */; };
 		8DD7205B2267A9A300DCAFFE /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7205A2267A9A300DCAFFE /* server.cpp */; };
 		8DD7205D2267A9B500DCAFFE /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7205C2267A9B500DCAFFE /* client.cpp */; };
 		8DD720602271F78A00DCAFFE /* bbs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7205F2271F78A00DCAFFE /* bbs.cpp */; };
@@ -42,6 +44,10 @@
 		8D32B9982200BFC900B46CAB /* libgmp.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.10.dylib; path = ../../../../usr/local/Cellar/gmp/6.1.2_2/lib/libgmp.10.dylib; sourceTree = "<group>"; };
 		8D32B9A22201E69100B46CAB /* Factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Factory.cpp; sourceTree = "<group>"; };
 		8D32B9A32201E69100B46CAB /* Factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Factory.hpp; sourceTree = "<group>"; };
+		8DB9E713228C084A00D6E22B /* prover2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = prover2.cpp; sourceTree = "<group>"; };
+		8DB9E714228C084A00D6E22B /* prover2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = prover2.hpp; sourceTree = "<group>"; };
+		8DB9E716228C086700D6E22B /* verifier2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = verifier2.cpp; sourceTree = "<group>"; };
+		8DB9E717228C086700D6E22B /* verifier2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = verifier2.hpp; sourceTree = "<group>"; };
 		8DD7205A2267A9A300DCAFFE /* server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
 		8DD7205C2267A9B500DCAFFE /* client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = client.cpp; sourceTree = "<group>"; };
 		8DD7205E2271F68100DCAFFE /* bbs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bbs.hpp; sourceTree = "<group>"; };
@@ -82,6 +88,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8DB9E712228C080100D6E22B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8DB9E713228C084A00D6E22B /* prover2.cpp */,
+				8DB9E714228C084A00D6E22B /* prover2.hpp */,
+				8DB9E716228C086700D6E22B /* verifier2.cpp */,
+				8DB9E717228C086700D6E22B /* verifier2.hpp */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		8DF5EBFB21F93D2E00A9773E = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +119,7 @@
 		8DF5EC0621F93D2E00A9773E /* MentalCards */ = {
 			isa = PBXGroup;
 			children = (
+				8DB9E712228C080100D6E22B /* Protocol */,
 				8DD7205E2271F68100DCAFFE /* bbs.hpp */,
 				8DD7205F2271F78A00DCAFFE /* bbs.cpp */,
 				8DD7206622833A5500DCAFFE /* tc.cpp */,
@@ -175,7 +193,9 @@
 				8DD7205B2267A9A300DCAFFE /* server.cpp in Sources */,
 				8D32B9A42201E69100B46CAB /* Factory.cpp in Sources */,
 				8DD720602271F78A00DCAFFE /* bbs.cpp in Sources */,
+				8DB9E718228C086700D6E22B /* verifier2.cpp in Sources */,
 				8DD7205D2267A9B500DCAFFE /* client.cpp in Sources */,
+				8DB9E715228C084A00D6E22B /* prover2.cpp in Sources */,
 				8DF5EC0821F93D2E00A9773E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

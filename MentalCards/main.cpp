@@ -56,5 +56,13 @@ int main(int argc, const char * argv[]) {
     
     std::cout << 2617 * invmod % randomPrime << std::endl;
     
+    mpz_class foo ;
+    
+    foo= "123456789012345678901234567890";
+    
+    int s = 2;
+    
+    std::cout << foo * s << std::endl;
+    
     return 0;
 }
