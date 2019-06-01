@@ -15,13 +15,15 @@
 
 class VERIFIER2{
 private:
-    mpz_class a1;
-    mpz_class a2;
+    mpz_class a1; //g
+    mpz_class a2; // g^xi
+    mpz_class q; // mod q
     int s; // s is random, s = 0 or 1
     mpz_class a3, a4; // get a3, a4 from prover
 public:
     VERIFIER2() = default;
-    VERIFIER2(mpz_class a1, mpz_class a2);
+    VERIFIER2(mpz_class a1, mpz_class a2, mpz_class q);
+    ~VERIFIER2();
     int sendRandomS();
     void getWithRandomR(std::vector <mpz_class> temp); // get a3 and a4
     bool check(int s); // check with different s

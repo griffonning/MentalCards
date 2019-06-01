@@ -99,6 +99,20 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		8DB9E719228D75FE00D6E22B /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		8DB9E71A229840EA00D6E22B /* Card */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		8DF5EBFB21F93D2E00A9773E = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +133,8 @@
 		8DF5EC0621F93D2E00A9773E /* MentalCards */ = {
 			isa = PBXGroup;
 			children = (
+				8DB9E71A229840EA00D6E22B /* Card */,
+				8DB9E719228D75FE00D6E22B /* Socket */,
 				8DB9E712228C080100D6E22B /* Protocol */,
 				8DD7205E2271F68100DCAFFE /* bbs.hpp */,
 				8DD7205F2271F78A00DCAFFE /* bbs.cpp */,

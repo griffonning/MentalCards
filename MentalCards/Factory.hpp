@@ -30,6 +30,20 @@ namespace factory {
     //inverse modulo, a^(-1) in GF(n)
     // A * X  mod N = 1, X is A^(-1) mod N
     mpz_class ex_Eulid(const mpz_class a, const mpz_class n);
+    
+    //generator a random number
+    mpz_class random(const mpz_class lower, const mpz_class upper);
+    
+    //find generators for a finite group
+    void Gfun(const mpz_class q, const mpz_class p);
+    
+    mpz_class randbits(int bits);
+    
+    mpz_class randprime(int bits);
+    
+    // vertify if a number is a prime number
+    // Miller-Rabin probabilistic primality tests
+    bool isPrimeNumber(const mpz_class p);
 }
 
 #endif /* Factory_hpp */

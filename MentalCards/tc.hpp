@@ -9,6 +9,8 @@
 #ifndef tc_hpp
 #define tc_hpp
 
+//define some big prime number
+
 #include <stdio.h>
 
 // TinyCard
