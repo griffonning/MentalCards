@@ -48,7 +48,7 @@ int main(int argc, const char * argv[]) {
     
     mpz_class secureP;
                       
-    secureP = SECUREPRIME;
+    secureP = SECURE_PRIME;
     
     std::cout << "secure prime p: " << secureP << std::endl;
     
