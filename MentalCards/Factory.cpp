@@ -142,3 +142,34 @@ bool factory::isPrimeNumber(const mpz_class n){
     }
     return isPrime;
 }
+
+//generate a random prime, which is a secure prime
+mpz_class factory::getSecureRandPrime(int bits){
+    mpz_class randPrimeP = getRandomPrime(bits);
+    mpz_class randQ = (randPrimeP -1)/2;
+    int count = 0;
+    while(!isPrimeNumber(randQ)){
+        std::cout << randPrimeP << " is not a secure prime." << std::endl;
+        randPrimeP = getRandomPrime(bits);
+        randQ = (randPrimeP -1)/2;
+        count ++;
+    }
+    std::cout << "after " << count << " rounds" << std::endl;
+    std::cout << randPrimeP << " is a secure prime!" << std::endl;
+    return randPrimeP;
+}
+
+//generate a pair of random primes, p and q.
+//q = (p-1)/2
+std::vector<mpz_class> factory::getSecureRandPrimePair(int bits){
+    std::size_t size = 2;
+    std::vector<mpz_class> primePair(size);
+    primePair.clear();
+    //
+    mpz_class randPrimeP = getSecureRandPrime(bits);
+    //insert p at front
+    auto it = primePair.insert(primePair.begin(), randPrimeP); //[p]
+    //insert q at front
+    primePair.insert(it, (randPrimeP-1)/2); //[q, p]
+    return primePair;
+}

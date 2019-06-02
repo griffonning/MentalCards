@@ -13,6 +13,7 @@
 #include <gmpxx.h>
 #include <iostream>
 #include <cmath>
+#include <vector>
 
 namespace factory {
     // get a random number with given bits
@@ -44,6 +45,10 @@ namespace factory {
     // vertify if a number is a prime number
     // Miller-Rabin probabilistic primality tests
     bool isPrimeNumber(const mpz_class p);
+    
+    std::vector<mpz_class> getSecureRandPrimePair(int bits);
+    
+    mpz_class getSecureRandPrime(int bits);
 }
 
 #endif /* Factory_hpp */
